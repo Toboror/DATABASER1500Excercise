@@ -1,0 +1,19 @@
+.mainHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#question {
+    background-color: chartreuse;
+}
+
+.qNinput, .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#input {
+    width: 300px;
+}
