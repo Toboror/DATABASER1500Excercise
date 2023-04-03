@@ -1,19 +1,42 @@
-.mainHeader {
+body {
+    font-family: sans-serif;
+}
+
+#sidebar {
+    background-color: darkgreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75px;
+    height: 100%;
+    transition: width 0.75s;
+    background-image: linear-gradient(red, white);
+}
+
+#data1500Logo, #adse1310Logo, #openSidebar {
+    width: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-top: 10px;
 }
 
-#question {
-    background-color: chartreuse;
+#sidebar:hover {
+    width: 210px;
 }
 
-.qNinput, .buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.phText {
+    position: absolute;
+    top: 0;
+    left: 75px;
+    opacity: 0;
+    transition: opacity 0.5s;
 }
 
-#input {
-    width: 300px;
+#sidebar:hover > .phText {
+    opacity: 100;
+}
+
+#header {
+    text-align: center;
 }
